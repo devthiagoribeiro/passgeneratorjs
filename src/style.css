@@ -176,9 +176,10 @@ label{
     border-radius: .5em;
 }
 
-h2{
-    color: white;
+p{
+    color: rgb(53, 53, 53);
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 input[type=checkbox]{
