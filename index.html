@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="src/img/ico.png" type="favicon">
+</head>
+<body>
+    <h2>Gerador de senhas</h2>
+    <div class="copiada hide">
+        <span>Senha copiada com sucesso!</span>
+    </div>
+    <main class="container">
+        <div class="box-pass hide" onclick="copyPass()">
+            <span id="password">
+            </span>
+            <img class="copy-icon" src="src/img/copy-icon.svg" alt="copy-icon">
+        </div>
+        <div class="box-body">
+            <div class="sizepass">
+                <span class="tampass">Tamanho da senha</span>
+                <span id="length"></span>
+            </div>
+            <input id="range" type="range" min="6" max="24" value="8">
+            <div class="escolhas">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="upperCase" checked>
+                    <label for="upperCase">Incluir letras maiúsculas</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="lowerCase" checked>
+                    <label for="lowerCase">Incluir letras minúsculas</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="numbers">
+                    <label for="numbers">Incluir números</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="symbols">
+                    <label for="symbols">Incluir simbolos</label>
+                </div>
+            </div>
+            <button id="btn" onclick="generatepass()">
+                <span>Gerar</span>
+                <img src="src/img/arrow_right_icon_133719.svg" alt="arrow_right_icon_133719">
+            </button>
+        </div>  
+    </main>
+    <script src="src/index.js"></script>
+</body>
+</html>
