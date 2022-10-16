@@ -177,9 +177,9 @@ label{
 }
 
 p{
-    color: rgb(53, 53, 53);
+    color: rgb(73, 73, 73);
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 20px;  
 }
 
 input[type=checkbox]{
