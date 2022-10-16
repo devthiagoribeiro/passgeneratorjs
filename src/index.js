@@ -48,3 +48,5 @@ function copyPass(){
         senhaCopiada.classList.add('hide')
     },2500);
 }    
+
+// teste
