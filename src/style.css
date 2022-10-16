@@ -259,5 +259,9 @@ input[type=checkbox]:checked::after{
         border-radius: .5em;
     }
     
+    button{
+        color: black;
+  }
+    
 }
 
