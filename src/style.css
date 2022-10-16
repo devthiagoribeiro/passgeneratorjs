@@ -85,6 +85,10 @@ main{
 
 .checkbox{
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 20px;
 }
 
 button{
@@ -138,7 +142,7 @@ label{
     height: 25px;
     border-radius: 50%; 
     background: #ffffff;
-    cursor: poinrgb(255, 255, 255)
+    cursor: pointer;
 }
 
 .escolhas{
@@ -176,3 +180,83 @@ h2{
     color: white;
     margin-bottom: 10px;
 }
+
+input[type=checkbox]{
+    all:unset;
+    position:relative;
+    display: inline-block;
+    border: dashed 1px #CCC;
+    border-radius: 5px;
+    width:20px;
+    height: 20px;
+    background: none;
+    cursor:pointer;
+    transition: .2s ease-in-out;
+}
+
+input[type=checkbox]:checked{
+    border: dashed 1px transparent;
+    background: #2DE88F;
+}
+
+input[type=checkbox]:checked::after{
+    content:"";
+    position:absolute;
+    width:12px;
+    height:12px;
+    left: calc(50% - 6px);
+    top: calc(50% - 6px);
+    border-radius:50%;
+    background: #187A4C;
+  }
+
+@media screen and (max-width: 1200px) {
+
+    body{
+        height: 100vh;
+        width: 100%;
+    }
+
+    main{
+        height: 70vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .box-pass{
+        padding: 0 20px;
+    }
+
+    .box-body{
+        padding: 30px 20px; 
+    }
+
+    .copiada.hide{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        width: 90vw;
+        height: 50px;
+        background-color: #5aa55c;
+        margin-bottom: 10px;
+        border-radius: .5em;
+    }
+    
+    .copiada{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        width: 90vw;
+        height: 50px;
+        background-color: #5aa55c;
+        margin-bottom: 10px;
+        border-radius: .5em;
+    }
+    
+}
+
